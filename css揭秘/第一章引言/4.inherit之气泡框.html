@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .callout{
+            margin-top: 20px;
+            position: relative;
+            height: 100px;
+            width: 200px;
+            background-color: lawngreen;
+            border: 1px solid royalblue;
+        }
+        .callout::before{
+            content: '';
+            position: absolute;
+            top: -.41em;
+            left: 1em;
+            padding: .35em;
+            background: inherit;
+            border: inherit;
+            border-right: 0;
+            border-bottom: 0;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="callout"></div>
+</body>
+</html>

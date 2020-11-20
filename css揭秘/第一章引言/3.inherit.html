@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #fff;
+        }
+        .father{
+            font-size: 20px;
+            color: blue;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        .one{
+            padding: .2em 1em;
+            width: max-content;
+            border: 1px solid  rgba(0, 0, 0, .1);
+            border-radius: .2em;
+            box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
+            color: white;
+            text-shadow: 0 -.05em .05em rgba(0, 0, 0, .5);
+            line-height: 1.5;
+            background: linear-gradient(hsla(0, 0%,100%,.2),transparent);
+            color: lawngreen;
+            /* 这一行控制整个块的颜色，包括边框等等 */
+            background-color: rgb(224, 24, 24);
+        }
+        .two{
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="one"><a href="">yes!</a></div>
+        <div class="two"><a href="">yes!</a></div>
+    </div>
+</body>
+</html>
